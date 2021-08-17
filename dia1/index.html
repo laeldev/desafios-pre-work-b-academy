@@ -12,12 +12,17 @@
 
 
 
-    
+
     <!-- Erro: GET http://localhost:3000/main.js net::ERR_ABORTED 404 (Not Found)
      
       local do arquivo main.js nao encontrado 
       caminho correro src="src/main.js"
     -->
-    <script src="src/main.js"></script>
+
+    <!-- Erro: Uncaught SyntaxError: Cannot use import statement outside a module
+      Erro da por causa da class import do main.js 
+      adicionado o type="module" 
+    -->
+    <script src="src/main.js" type="module"></script>
   </body>
 </html>
