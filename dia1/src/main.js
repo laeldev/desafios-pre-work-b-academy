@@ -24,8 +24,6 @@ app.innerHTML = `
   */
 
 link.addEventListener("click", (event) => {
- const display = app.style.display
-
- app.style.display = display === 'none' ? 'block' : 'none'
-  
- },);
+  event.preventDefault()
+  app.classList.toggle('hide') 
+ })
