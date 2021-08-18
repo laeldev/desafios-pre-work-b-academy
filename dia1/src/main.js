@@ -24,9 +24,8 @@ app.innerHTML = `
   */
 
 link.addEventListener("click", (event) => {
-  if (app.style.visibility === "hidden")
-  app.style.visibility = "visible";
-  else
-  app.style.visibility = "hidden"
+ const display = app.style.display
+
+ app.style.display = display === 'none' ? 'block' : 'none'
   
- },false);
+ },);
